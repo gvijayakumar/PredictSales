@@ -1,13 +1,72 @@
+# Standard python gitignore file
+*.csv
+!/06_Neural_Networks/08_Learning_Tic_Tac_Toe/base_tic_tac_toe_moves.csv
+*.en
+*.de
+*.tsv
+*.Rdata
+*.rdata
+*.ppt
+*.pptx
+*.zip
+*.pb
+*.docx
+*.xls
+*.xlsx
+*.gz
+vocab2ix.json
+vocab2ix_dict.json
+.gitignore~
+.Rhistory
+Readme.md~
+readme.md~
+LICENSE~
+*.pkl
+*.ckpt
+checkpoint
+*.ckpt
+*.ckpy.meta
+*.pkl
+*.neg
+*.pos
+**/temp/
+**/temp
+**/tmp/
+**/tmp
+*/tensorboard_logs/*
+*/tensorboard_logs/
+*/tensorboard_logs
+***/tensorboard_logs/*
+**/tensorboard_logs/
+**/tensorboard_logs
+tensorboard_logs/
+tensorboard_logs/*
+*/tensorboard/*
+*/tensorboard/
+*/tensorboard
+***/tensorboard/*
+**/tensorboard/
+**/tensorboard
+tensorboard/
+tensorboard/*
+temp_*
+
+**/12_Reinforcement_Learning/
+**/12_Reinforcement_Learning
+**/12_Reinforcement_Learning/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+*.py~
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -19,11 +78,14 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+
+temp/
+temp*/
+temp_*.*
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -43,9 +105,8 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
+*,cover
 .hypothesis/
-.pytest_cache/
 
 # Translations
 *.mo
@@ -54,7 +115,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -69,7 +129,7 @@ docs/_build/
 # PyBuilder
 target/
 
-# Jupyter Notebook
+# IPython Notebook
 .ipynb_checkpoints
 
 # pyenv
@@ -78,27 +138,20 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
-# SageMath parsed files
-*.sage.py
-
-# Environments
+# dotenv
 .env
-.venv
-env/
+
+# virtualenv
 venv/
 ENV/
-env.bak/
-venv.bak/
 
-# Spyder project settings
+# Spyder/pycharm project settings
 .spyderproject
-.spyproject
+.idea/
 
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
+# Ignore data sources
+*/MNIST_data/*
+*/birthweight_data/*
